@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] - [Your Title]</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@600,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+    <div id="cursor-light"></div>
+
+    <header id="header" class="bg-black/20 backdrop-blur-md fixed top-4 left-1/2 -translate-x-1/2 z-50 rounded-full border border-border-color shadow-2xl shadow-black/20">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between h-16">
+                <a href="#home" class="text-xl font-bold text-white px-3">CrystalGrad</a>
+                <nav class="hidden md:flex items-center space-x-2">
+                    <a href="#home" class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Home</a>
+                    <a href="#services" class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Services</a>
+                    <a href="#portfolio" class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Portfolio</a>
+                    <a href="#resume" class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">Resume</a>
+                    <a href="#about" class="text-text-secondary hover:text-white transition-colors duration-300 px-4 py-2 rounded-full hover:bg-white/10">About</a>
+                </nav>
+                <a href="#contact" class="hidden md:inline-block btn-primary text-sm !px-5 !py-2">Get In Touch</a>
+                <button id="mobile-menu-button" class="md:hidden text-white focus:outline-none p-2 mr-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 right-0 mx-4 rounded-lg border border-border-color p-4 space-y-2">
+            <a href="#home" class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Home</a>
+            <a href="#services" class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Services</a>
+            <a href="#portfolio" class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Portfolio</a>
+            <a href="#resume" class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">Resume</a>
+            <a href="#about" class="block text-text-secondary hover:text-white py-2 px-3 rounded-md hover:bg-white/10">About</a>
+            <a href="#contact" class="block mt-4 text-center btn-primary w-full">Get In Touch</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <div class="container mx-auto px-6 z-20 relative">
+                <div class="grid md:grid-cols-2 gap-16 items-center">
+                    <div class="text-center md:text-left">
+                        <h1 class="font-heading text-5xl lg:text-7xl font-bold tracking-tight text-white reveal">
+                            Beautiful 
+                            <span class="text-gradient">Crystal Clear</span>
+                            Gradient Designs
+                        </h1>
+                        <p class="mt-6 text-lg lg:text-xl text-text-secondary reveal" style="transition-delay: 150ms;">
+                            Creating stunning interactive experiences with modern glass morphism and gradient effects.
+                        </p>
+                        <div class="mt-10 flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 reveal" style="transition-delay: 300ms;">
+                            <a href="#portfolio" class="btn-primary text-lg w-full sm:w-auto">View Our Work</a>
+                            <a href="#services" class="btn-outline text-lg w-full sm:w-auto">Our Services</a>
+                        </div>
+                    </div>
+                    <div class="hidden md:flex items-center justify-center reveal" style="transition-delay: 450ms;">
+                        <div class="glass-card w-full max-w-md h-auto aspect-square flex items-center justify-center p-8">
+                           <div class="hero-icon-container w-full h-full">
+                                <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" class="hero-icon-shape">
+                                    <defs>
+                                        <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                            <stop offset="0%" style="stop-color:var(--accent-start)" />
+                                            <stop offset="100%" style="stop-color:var(--accent-end)" />
+                                        </linearGradient>
+                                    </defs>
+                                    <circle cx="100" cy="100" r="90" fill="none" stroke="url(#iconGradient)" stroke-width="2" opacity="0.3"/>
+                                    <circle cx="100" cy="100" r="70" fill="none" stroke="url(#iconGradient)" stroke-width="2" opacity="0.5"/>
+                                    <circle cx="100" cy="100" r="50" fill="none" stroke="url(#iconGradient)" stroke-width="2" opacity="0.7"/>
+                                    <path d="M100 60 L134.64 100 L100 140 L65.36 100 Z" fill="url(#iconGradient)" stroke="white" stroke-width="1"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="as-seen-on" class="py-12">
+            <div class="container mx-auto px-6 reveal">
+                <p class="text-center text-sm font-semibold text-text-secondary tracking-widest uppercase">AS SEEN ON</p>
+                <div class="mt-8 logos-container flex justify-center items-center gap-8 md:gap-12 flex-wrap">
+                    <img src="https://placehold.co/120x40/0F101A/a4a4a4?text=FORBES" alt="Forbes Logo" class="h-6">
+                    <img src="https://placehold.co/120x40/0F101A/a4a4a4?text=Inc." alt="Inc. Logo" class="h-6">
+                    <img src="https://placehold.co/120x40/0F101A/a4a4a4?text=ENTREPRENEUR" alt="Entrepreneur Logo" class="h-8">
+                    <img src="https://placehold.co/120x40/0F101A/a4a4a4?text=TechCrunch" alt="TechCrunch Logo" class="h-6">
+                    <img src="https://placehold.co/120x40/0F101A/a4a4a4?text=WIRED" alt="Wired Logo" class="h-6">
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" class="py-24">
+            <div class="container mx-auto px-6">
+                <div class="text-center reveal">
+                    <h2 class="section-title">The Craft of UI</h2>
+                    <p class="section-subtitle">Unlock the art and science of interface development. This isn’t just about pushing pixels — it’s about mastering the tools, understanding the nuances, and shaping experiences with intention.</p>
+                </div>
+                
+                <ul class="service-list">
+                    <li data-active="true">
+                        <article>
+                            <h3>The Craft</h3>
+                            <p>
+                                Gain the confidence to build anything you envision, transforming
+                                motion, interaction, and design principles into second nature.
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                <path d="M6 3h12l4 6-10 13L2 9Z"></path>
+                                <path d="M11 3 8 9l4 13 4-13-3-6"></path>
+                                <path d="M2 9h20"></path>
+                            </svg>
+                            <a href="#" class="service-link">
+                                <span>Learn more</span>
+                            </a>
+                            <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?q=80&w=2070&auto=format&fit=crop" alt="Abstract colorful paint"/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>CSS Animation</h3>
+                            <p>
+                                Master CSS animations from your very first set of @keyframes right
+                                through to things no one else ever teaches you.
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                                <path d="M7 3v18"></path>
+                                <path d="M3 7.5h4"></path>
+                                <path d="M3 12h18"></path>
+                                <path d="M3 16.5h4"></path>
+                                <path d="M17 3v18"></path>
+                                <path d="M17 7.5h4"></path>
+                                <path d="M17 16.5h4"></path>
+                            </svg>
+                            <a href="#" class="service-link"><span>Learn more</span></a>
+                            <img src="https://images.unsplash.com/photo-1519608487953-e999c8d477b8?q=80&w=1974&auto=format&fit=crop" alt="Abstract light trails"/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>SVG Filters</h3>
+                            <p>
+                                Shaders on a budget. Learn how to use noise to your advantage whilst
+                                making flames and stickers.
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+                            </svg>
+                            <a href="#" class="service-link"><span>Learn more</span></a>
+                            <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop" alt="Neon sign"/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Scroll Animation</h3>
+                            <p>
+                                Take your users on a journey with the joy of tasteful scroll
+                                animation. You might not even need JavaScript.
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M19 17V5a2 2 0 0 0-2-2H4"></path>
+                                <path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"></path>
+                            </svg>
+                            <a href="#" class="service-link"><span>Learn more</span></a>
+                            <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?q=80&w=1936&auto=format&fit=crop" alt="Mountain range"/>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h3>Taming Canvas</h3>
+                            <p>
+                                Grasp how to tame the pixel playground and when to do so. Whilst
+                                building with "Performance Driven Development".
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle>
+                                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle>
+                                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle>
+                                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle>
+                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                            </svg>
+                            <a href="#" class="service-link"><span>Learn more</span></a>
+                            <img src="https://images.unsplash.com/photo-1543286386-713bdd548da4?q=80&w=2070&auto=format&fit=crop" alt="Charts and graphs"/>
+                        </article>
+                    </li>
+                     <li>
+                        <article>
+                            <h3>Layout Tricks</h3>
+                            <p>
+                                Do you really need a library for that? Sometimes stepping back and
+                                rethinking the problem yields a nifty solution.
+                            </p>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m21.64 3.64-1.28-1.28a1.21 1.21 0 0 0-1.72 0L2.36 18.64a1.21 1.21 0 0 0 0 1.72l1.28 1.28a1.2 1.2 0 0 0 1.72 0L21.64 5.36a1.2 1.2 0 0 0 0-1.72"></path>
+                                <path d="m14 7 3 3"></path>
+                                <path d="M5 6v4"></path>
+                                <path d="M19 14v4"></path>
+                                <path d="M10 2v2"></path>
+                                <path d="M7 8H3"></path>
+                                <path d="M21 16h-4"></path>
+                                <path d="M11 3H9"></path>
+                            </svg>
+                            <a href="#" class="service-link"><span>Learn more</span></a>
+                            <img src="https://images.unsplash.com/photo-1523821741446-edb2b68bb7a0?q=80&w=2070&auto=format&fit=crop" alt="Colorful ink in water"/>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="portfolio" class="py-24 bg-dark/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center reveal">
+                    <h2 class="section-title">The Proof Is In the Results</h2>
+                    <p class="section-subtitle">I partner with clients to achieve tangible outcomes. Here's a look at what we've accomplished together.</p>
+                </div>
+                
+                <div class="preview__container" style="--img: url(https://assets.codepen.io/2392/360__homepage--full.png)">
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>
+                    <article class="preview" tabindex="0"></article>    
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="py-24">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center">
+                    <h2 class="section-title">My Experience</h2>
+                    <p class="section-subtitle">A proven track record of designing and developing high-quality digital experiences.</p>
+                </div>
+                <div class="mt-12 max-w-4xl mx-auto text-left">
+                    <div class="glass-card p-8 md:p-12">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="font-heading text-3xl text-white">Work Experience</h3>
+                                <p class="text-text-secondary">My professional journey.</p>
+                            </div>
+                            <a href="#" class="btn-primary !py-2 !px-5 whitespace-nowrap">Download CV</a>
+                        </div>
+
+                        <div class="grid md:grid-cols-4 gap-6 mb-8">
+                            <div class="md:col-span-1 text-text-secondary font-semibold">2022 - Present</div>
+                            <div class="md:col-span-3">
+                                <h4 class="text-xl font-bold text-white">Lead UI/UX Designer</h4>
+                                <p class="text-text-secondary mb-2">Creative Solutions Inc.</p>
+                                <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Led the design of a cross-platform application from concept to launch.</li>
+                                    <li>Mentored a team of junior designers, fostering a collaborative environment.</li>
+                                    <li>Improved key product metrics by 30% through user-centered design.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-4 gap-6">
+                            <div class="md:col-span-1 text-text-secondary font-semibold">2020 - 2022</div>
+                            <div class="md:col-span-3">
+                                <h4 class="text-xl font-bold text-white">Senior UI Developer</h4>
+                                <p class="text-text-secondary mb-2">Innovatech</p>
+                                 <ul class="list-disc list-inside text-text-secondary space-y-1">
+                                    <li>Developed complex interactive features using modern frontend frameworks.</li>
+                                    <li>Collaborated with product managers to define feature requirements.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr class="my-12 border-border-color">
+
+                        <div>
+                            <h3 class="font-heading text-3xl text-white mb-4">Education</h3>
+                             <div class="grid md:grid-cols-4 gap-6">
+                                 <div class="md:col-span-1 text-text-secondary font-semibold">2016 - 2020</div>
+                                 <div class="md:col-span-3">
+                                     <h4 class="text-xl font-bold text-white">B.Sc. in Human-Computer Interaction</h4>
+                                     <p class="text-text-secondary">University of Design & Technology</p>
+                                 </div>
+                             </div>
+                        </div>
+
+                        <hr class="my-12 border-border-color">
+
+                        <div>
+                            <h3 class="font-heading text-3xl text-white mb-4">Skills</h3>
+                            <div class="flex flex-wrap gap-3">
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">UI/UX Design</span>
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">Figma</span>
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">JavaScript (React, Vue)</span>
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">HTML & CSS</span>
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">Prototyping</span>
+                                <span class="bg-gray-700/50 text-text-primary text-sm font-medium px-4 py-2 rounded-full">User Research</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6 reveal">
+                 <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+                     <div class="md:w-1/3">
+                         <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop" class="rounded-full aspect-square object-cover shadow-2xl shadow-black/30">
+                     </div>
+                     <div class="md:w-2/3">
+                         <h2 class="font-heading text-4xl md:text-5xl font-bold text-white">From Broke to Boardrooms</h2>
+                         <div class="mt-6 text-lg text-text-secondary space-y-6">
+                             <p>Ten years ago, I was sleeping on a friend's couch, staring at a mountain of debt. My turning point was a painful realization: my hard work was the problem. I was addicted to being busy, not effective.</p>
+                             <p>Today, I share that playbook with leaders like you, because success isn't just about financial wins—it's about the freedom to enjoy them.</p>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24">
+            <div class="container mx-auto px-6 reveal">
+                <div class="text-center">
+                    <h2 class="section-title">Ready to Scale Your Business?</h2>
+                    <p class="section-subtitle">Let's talk. Fill out the form below, and my team will be in touch to see if we're a good fit.</p>
+                </div>
+                <div class="mt-12 max-w-xl mx-auto glass-card p-8">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <input type="text" name="name" id="name" placeholder="Full Name" required class="w-full bg-black/20 border-2 border-border-color rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--accent-end)] transition">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="Email Address" required class="w-full bg-black/20 border-2 border-border-color rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--accent-end)] transition">
+                        </div>
+                        <div>
+                             <textarea name="challenge" id="challenge" rows="4" placeholder="What's your biggest challenge right now?" required class="w-full bg-black/20 border-2 border-border-color rounded-lg px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-[var(--accent-end)] transition"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-primary w-full text-lg">Submit Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="border-t border-border-color bg-dark/50">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="col-span-1">
+                    <h3 class="text-2xl font-bold text-white">CrystalGrad</h3>
+                    <p class="mt-2 text-text-secondary pr-8">Shaping stunning interactive experiences.</p>
+                    <div class="mt-6 flex space-x-4">
+                        <a href="#" class="text-text-secondary hover:text-white"><span class="sr-only">Twitter</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                        <a href="#" class="text-text-secondary hover:text-white"><span class="sr-only">LinkedIn</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path></svg></a>
+                         <a href="#" class="text-text-secondary hover:text-white"><span class="sr-only">GitHub</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.308.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-2">
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-sm font-semibold tracking-wider uppercase text-text-secondary">Navigate</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><a href="#home" class="text-base text-text-primary hover:text-white">Home</a></li>
+                                <li><a href="#services" class="text-base text-text-primary hover:text-white">Services</a></li>
+                                <li><a href="#portfolio" class="text-base text-text-primary hover:text-white">Portfolio</a></li>
+                                 <li><a href="#about" class="text-base text-text-primary hover:text-white">About</a></li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h3 class="text-sm font-semibold tracking-wider uppercase text-text-secondary">Legal</h3>
+                            <ul class="mt-4 space-y-2">
+                                <li><a href="#" class="text-base text-text-primary hover:text-white">Privacy Policy</a></li>
+                                <li><a href="#" class="text-base text-text-primary hover:text-white">Terms of Service</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 pt-8 border-t border-border-color text-center text-text-secondary">
+                <p>&copy; 2025 CrystalGrad. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <a href="#home" id="back-to-top" class="fixed bottom-8 right-8 z-50 glass-card !rounded-full w-12 h-12 flex items-center justify-center hover:!border-[var(--accent-end)] group">
+      <svg class="w-6 h-6 text-text-secondary group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7"></path></svg>
+    </a>
+    
+    <script src="script.js"></script>
+</body>
+</html>
